@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #fff;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner h1, .banner p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 根據需要調整位置 */
+    top: 50%;
+}

@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.sticky-header {
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sticky-header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.sticky-header li {
+    display: inline-block;
+    position: relative;
+}
+
+.sticky-header li a {
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.sticky-header li ul {
+    display: none;
+    position: absolute; 
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.048);
+    z-index: 1000;
+}
+
+.sticky-header li ul li {
+    display: block;
+    text-align: left;
+}
+
+.sticky-header li ul li a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.sticky-header li ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.sticky-header li:hover ul {
+    display: block;
+}
+/* section  */
+section {
+    height: 610px;
+    border: 1px solid #ccc;
+    margin: 2rem 0;
+}
+
+.table-rwd {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.home-about .learn-more a {
+    background: #006a00;
+    color: #fff;
+    padding: 18px 35px;
+    display: inline-block;
+    transition: all 0.5s;
+    margin-top: 0px;
+    position: relative;
+}
+
+.learn-more a {
+    background: #006a00;
+    color: #fff !important;
+    padding: 13px 35px;
+    display: inline-block;
+    transition: all 0.5s;
+    margin-top: 50px;
+    position: relative;
+}
+
+/* owl  */
+.owl-carousel {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 160px;
+}
+
+
+.owl-carousel .item img {
+    width: 100%; 
+    height: auto; 
+}
